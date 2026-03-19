@@ -1,0 +1,129 @@
+
+/* Login.css */
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers vertically */
+    min-height: 80vh;    /* Takes up most of the screen height */
+    padding: 20px;
+    background-color: #ffffff; /* Or #f8f8f8 if you want a slight contrast */
+}
+
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 450px; /* Slightly wider for a better full-page feel */
+    padding: 50px;    /* More padding for a premium look */
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* Softer shadow */
+    border: 1px solid #eee;
+}
+
+.card-header h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    text-align: center; /* Center the title */
+    width: 100%;
+}
+
+/* Button & Input Styling */
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.google-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.close-btn {
+    font-size: 30px;
+    text-decoration: none;
+    color: #888;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: #d01c28;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-btn:hover { background: #b01822; }
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%; left: 0; width: 100%; height: 1px;
+    background: #eee;
+    z-index: 1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+    position: relative;
+    z-index: 2;
+    color: #999;
+    font-size: 12px;
+}
+
+.red-text { color: #d01c28; cursor: pointer; font-weight: 600; }

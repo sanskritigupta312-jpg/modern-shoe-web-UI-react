@@ -1,0 +1,205 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: calc(100vh - 80px); /* Adjusted for new Navbar height */
+    gap: 20px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero-content h1 {
+    font-weight: 800;
+    font-size: clamp(48px, 8vw, 104px); /* Fluid typography */
+    line-height: 0.9;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.hero-content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #5a5a5a;
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.hero-btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.primary-btn {
+    border: none;
+    background-color: #d01c28;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #b01822;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(208, 28, 40, 0.2);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+}
+
+.secondary-btn:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+/* Marketplace Section */
+.shopping-availability p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.brand-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.brand-icons img {
+    height: 25px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.brand-icons img:hover {
+    opacity: 1;
+}
+
+/* Image Section */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Simple floating animation */
+.floating-img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* --- Responsiveness --- */
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse; /* Puts text below image on smaller screens */
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        align-items: center;
+    }
+
+    .hero-content p {
+        max-width: 600px;
+    }
+
+    .hero-image-container {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 990px) {
+    .hero-content h1 {
+       font-size: 48px; /* Significantly reduced for mobile */
+       line-height: 1.1;
+    }
+
+    .hero-image {
+        height: auto;
+        width: 100%; /* Use 100% instead of 350px */
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack vertically */
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 48px; /* Reduced from 104px */
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        max-width: 100%; /* Ensure text wraps */
+        margin: 0 auto;
+    }
+
+    .hero-button {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-image {
+        width: 100%; /* Remove fixed 530px */
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 80%; /* Scale the shoe proportionally */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .primary-btn, .secondary-btn {
+        width: 100%;
+    }
+
+    .brand-icons {
+        justify-content: center;
+    }
+}
