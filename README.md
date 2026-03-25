@@ -1,6 +1,6 @@
-# 🚀 Modern Shoe Store UI | React & Tailwind CSS
+# 🚀 Modern Shoe Store UI | React JS
 
-A sleek and modern footwear e-commerce UI built using React.js and Tailwind CSS. This project focuses on delivering a clean, responsive, and visually appealing UI inspired by premium shoe brands.
+A sleek and modern footwear e-commerce UI built using React.js. This project focuses on delivering a clean, responsive, and visually appealing UI inspired by premium shoe brands.
 
 🔗 **Live Demo: "https://modern-shoe-web-ui-react.vercel.app/"
 
@@ -12,8 +12,8 @@ A sleek and modern footwear e-commerce UI built using React.js and Tailwind CSS.
 **Reusable Components:** Modular React components for scalability.
 
 ## 🛠️ Tech Stack
-* **Frontend:** React.js, Tailwind CSS
-* **Build Tool:** Lucide React, Custom 3D Illustrations
+* **Frontend:** React.js
+* **Build Tool:** Vite
 * **Deployment:** Vercel
 * **Version Control:** Git & GitHub
 
