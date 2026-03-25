@@ -1,127 +1,110 @@
-/* Main Layout */
 .contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin: 20px;
+  padding: 16px;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 28px;
+  padding-left: 20px;
+}
+
+.contact-desc {
+  margin: 28px;
+  padding-left: 20px;
   font-family: 'Poppins', sans-serif;
-}
-
-.contact-header {
-  font-size: 48px;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-
-.contact-subtext {
   font-size: 16px;
-  color: #666;
-  margin-bottom: 40px;
-  max-width: 900px;
-  line-height: 1.6;
-  text-transform: uppercase;
+  color: #4b5563;
 }
 
-.contact-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-/* Form Section */
-.form-section {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-}
-
-.button-group {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-/* Reusing your email button style */
-.email-form-btn {
+.contact-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 12px;
-  background: white;
-  border: 2px solid black;
-  font-weight: 700;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding: 28px;
 }
 
-.email-form-btn:hover {
-  background: black;
-  color: white;
-}
-
-/* Floating Label Logic */
-.input-group {
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.form-label {
-  position: absolute;
-  top: -10px; /* Pulls it up onto the border */
-  left: 15px;
-  background-color: white; /* Matches page bg to hide the line behind it */
-  padding: 0 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
-  z-index: 10;
-}
-
-.form-input, 
-.form-textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #333;
-  border-radius: 4px;
-  font-size: 16px;
-  outline: none;
-  box-sizing: border-box; /* Crucial for width alignment */
-}
-
-.form-textarea {
-  height: 150px;
-  resize: none;
-}
-
-.submit-btn-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.submit-btn {
-  background-color: #d90429; /* Red theme */
-  color: white;
-  padding: 12px 40px;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* Image Section */
-.service-image-container {
-  flex: 1;
+.contact-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 24px; 
+  margin-bottom: 10px;
 }
 
-.service-image {
+.button-common {
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  gap: 8px;             
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.email-btn {
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+  padding: 12px;
+  border-radius: 8px;
   width: 100%;
-  max-width: 500px;
-  height: auto;
+  max-width: 420px;    
+  margin-left: auto;
+  margin-right: auto;    
+  transition: 0.3s;
+}
+
+.email-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 28px;
+}
+
+.label {
+  position: relative;
+  top: 32px;
+  margin-left: 12px;
+  background: white;
+  padding: 4px 8px;
+  font-size: 14px;
+  width: fit-content;
+}
+
+.input {
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 16px;
+}
+
+.textarea {
+  border: 2px solid #d1d5db;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 16px;
+  height: 120px;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 36px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.icon {
+  font-size: 24px;
 }
