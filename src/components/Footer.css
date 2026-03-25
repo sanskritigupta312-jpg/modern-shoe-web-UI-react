@@ -1,0 +1,95 @@
+/* Container styles */
+.footer-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0; /* py-8 */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0.5rem; /* m-2 */
+}
+
+/* Headings */
+.footer-heading {
+    color: #ef4444; /* text-red-500 */
+    font-weight: 600;
+    font-size: 1.125rem; /* text-lg */
+    margin: 0.75rem; /* m-3/m-5 */
+}
+
+/* Navigation Links */
+.footer-nav-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem; /* gap-4 */
+    margin-bottom: 0.5rem; /* mb-2 */
+    flex-wrap: wrap;
+    font-size: 0.875rem; /* text-sm */
+    list-style: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #ef4444;
+}
+
+/* Social/Available Section */
+.available-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem; /* gap-5 */
+    margin: 0.75rem; /* m-3 */
+}
+
+.store-link img {
+    width: 1.5rem; /* size-6 */
+    height: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.store-link:hover img {
+    width: 1.75rem; /* size-7 */
+    height: 1.75rem;
+}
+
+/* Bottom Bar */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #4b5563; /* border-gray-600 */
+    width: 100%;
+    margin: 1rem 0; /* my-4 */
+}
+
+.footer-bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem; /* m-3 */
+    font-size: 12px;
+    color: #6b7280; /* text-gray-500 */
+}
+
+.bottom-link {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.bottom-link:hover {
+    color: #ef4444;
+    text-decoration: underline;
+}
