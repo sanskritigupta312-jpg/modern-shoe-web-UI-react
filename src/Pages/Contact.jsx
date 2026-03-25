@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import { MdMessage } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
 import { HiMail } from "react-icons/hi";
-import './Contact.css'; 
+import './Contact.css';
 
 const Contact = () => {
   return (
@@ -18,39 +18,42 @@ const Contact = () => {
 
       <div className='contact-content-wrapper'>
         <div className="form-section">
-          {/* Buttons are outside the form tag */}
+          {/* Buttons Section */}
           <div className='button-group'>
-    <Button text="VIA SUPPORT CHAT" icons={<MdMessage size={20} />} />
-    <Button text="VIA CALL" icons={<IoMdCall size={20} />} />
+            <Button text="VIA SUPPORT CHAT" icons={<MdMessage size={20} />} />
+            <Button text="VIA CALL" icons={<IoMdCall size={20} />} />
           </div>
 
           <button className="email-form-btn">
-    <HiMail size={24} />
-    VIA EMAIL FORM
+            <HiMail size={24} />
+            VIA EMAIL FORM
           </button>
 
-          {/* Form starts here */}
+          {/* Form Section */}
           <form className='contact-form'>
-    <div className="input-group">
-      <label htmlFor='name' className='form-label'>Name</label>
-      <input type="text" id="name" name="name" className='form-input' />
-    </div>
+            <div className="input-group">
+              <label htmlFor='name' className='form-label'>Name</label>
+              <input type="text" id="name" name="name" className='form-input' />
+            </div>
 
-    <div className="input-group">
-      <label htmlFor='email' className='form-label'>Email</label>
-      <input type="email" id="email" name="email" className='form-input' />
-    </div>
+            <div className="input-group">
+              <label htmlFor='email' className='form-label'>Email</label>
+              <input type="email" id="email" name="email" className='form-input' />
+            </div>
 
-    <div className="input-group">
-      <label htmlFor='text' className='form-label'>Text</label>
-      <textarea id="text" name="text" className='form-textarea' />
-    </div>
-    
-    {/* Optional: Add a submit button here */}
+            <div className="input-group">
+              <label htmlFor='text' className='form-label'>Text</label>
+              <textarea id="text" name="text" className='form-textarea' />
+            </div>
           </form>
-       </div>
+        </div>
 
-        <img src='Service_image.svg' alt='service image' className='service-image' />
+        {/* Image Section */}
+        <img 
+          src='Service_image.svg' 
+          alt='service image' 
+          className='service-image' 
+        />
       </div>
     </div>
   );
