@@ -1,16 +1,26 @@
-# React + Vite
+# 🚀 Modern Shoe Store UI | React & Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and modern footwear e-commerce UI built using React.js and Tailwind CSS. This project focuses on delivering a clean, responsive, and visually appealing UI inspired by premium shoe brands.
 
-Currently, two official plugins are available:
+🔗 **Live Demo: "https://modern-shoe-web-ui-react.vercel.app/"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+**Responsive Design:** Works smoothly on Mobile, Tablet, and Desktop.
+**Modern Hero Section:** Bold typography with high-quality product visuals.
+**Navigation Bar:** Clean and minimal navbar with active states.
+**Call-to-Action Buttons:** “Shop Now” and “Category” for better UX.
+**Reusable Components:** Modular React components for scalability.
 
-## React Compiler
+## 🛠️ Tech Stack
+* **Frontend:** React.js, Tailwind CSS
+* **Build Tool:** Lucide React, Custom 3D Illustrations
+* **Deployment:** Vercel
+* **Version Control:** Git & GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```text
+src/
+├── assets/        # Images and icons
+├── Components/    # Reusable UI elements (Navbar, Hero, Projects, etc.)
+├── pages/         # Page-level components
+└── App.jsx        # Main application logic
